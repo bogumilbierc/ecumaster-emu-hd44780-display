@@ -13,7 +13,8 @@ Connects to EMU serial output on the expansion port.
 ## Arduino IDE setup ##
 
 - Install LiquidCrystal_I2C library
-- Install EMUSerial library (Note: On Linux You need to modify `~/Arduino/libraries/EMUSerial/src/EMUSerial.h` file and replace `#include "arduino.h"` with `#include "Arduino.h"`)
+- Install EMUSerial library (Note: On Linux You need to modify `~/Arduino/libraries/EMUSerial/src/EMUSerial.h` file and
+  replace `#include "arduino.h"` with `#include "Arduino.h"`)
 
 ## Hardware connections ##
 
@@ -28,7 +29,14 @@ Connects to EMU serial output on the expansion port.
 
 ### Arduino <> MAX3232 ###
 
-| Arduino | MAX3232 |
-|---------|---------|
-| TX      | TX     |
-| RX      | RX     |
+| Arduino | MAX3232 (TTL side) |
+|---------|--------------------|
+| TX      | IN                 |
+| RX      | OUT                |
+
+### EMU <> MAX3232 ###
+
+| EMU         | MAX3232 (RS232 side) |
+|-------------|----------------------|
+| TXD (pin 2) | IN                   |
+| RXD (pin 1) | OUT                  |
