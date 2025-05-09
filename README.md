@@ -6,9 +6,20 @@ Connects to EMU serial output on the expansion port.
 ## Elements ##
 
 - Arduino Nano
+  
+  ![arduino nano](./docs/elements/arduino_nano.png)
 - HD44780 with I2C interface
+  
+  ![hd44780 i2c](./docs/elements/hd44780_i2c.png)
+
 - MAX3232 RS232<>TTL converter
+  
+  ![max3232 top side](./docs/elements/max3232_top.png)
+  ![max3232 top side](./docs/elements/max3232_bottom.png)
+
 - GX16 5-pin connector
+  
+  ![gx16 5-pin](./docs/elements/gx16_5pin.png)
 
 ## Arduino IDE setup ##
 
