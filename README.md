@@ -21,7 +21,7 @@ Connects to EMU serial output on the expansion port.
 ### Arduino <> Display ###
 
 | Arduino | Display |
-|---------|---------|
+| ------- | ------- |
 | 5V      | VCC     |
 | GND     | GND     |
 | A4      | SDA     |
@@ -30,13 +30,20 @@ Connects to EMU serial output on the expansion port.
 ### Arduino <> MAX3232 ###
 
 | Arduino | MAX3232 (TTL side) |
-|---------|--------------------|
+| ------- | ------------------ |
 | TX      | IN                 |
 | RX      | OUT                |
 
 ### EMU <> MAX3232 ###
 
-| EMU         | MAX3232 (RS232 side) |
-|-------------|----------------------|
-| TXD (pin 2) | IN                   |
-| RXD (pin 1) | OUT                  |
+| EMU           | MAX3232 (RS232 side) |
+| ------------- | -------------------- |
+| RXD (pin 1)   | OUT                  |
+| TXD (pin 2)   | IN                   |
+| +3.3V (pin 3) | unused               |
+| GND (pin 4)   | GND                  |
+| +5V (pin 5)   | VCC                  |
+
+### Wiring diagram ###
+
+[wiring diagram](./docs/wiring_diagram.png)
