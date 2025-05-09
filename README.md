@@ -46,4 +46,4 @@ Connects to EMU serial output on the expansion port.
 
 ### Wiring diagram ###
 
-[wiring diagram](./docs/wiring_diagram.png)
+![wiring diagram](./docs/wiring_diagram.png)
