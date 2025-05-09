@@ -6,32 +6,51 @@
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 EMUSerial emu(Serial);
 
+char intStringBuff[3];
+
 void setup() {
   Serial.begin(19200);
 
   lcd.init();
   lcd.backlight();
   lcd.clear();
-  lcd.print("EMU BIEDADU");
+  lcd.print("KACZKA");
+  delay(3000);
 }
 
 void loop() {
   emu.checkEmuSerial();
 
   // Available channels: https://github.com/GTO2013/EMUSerial
+  printFirstLine();
+  printSecondLine();
+}
 
+void printFirstLine() {
   lcd.home();
+
   lcd.print("WT:");
-  lcd.print(emu.emu_data.CLT);
+  printThreeDigitInt(emu.emu_data.CLT);
+
   lcd.print(" ");
+
   lcd.print("TPS:");
-  lcd.print(emu.emu_data.TPS);
+  printThreeDigitInt(emu.emu_data.TPS);
+}
 
-
+void printSecondLine() {
   lcd.setCursor(0, 1);  //jump to new line
+
   lcd.print("OT:");
-  lcd.print(emu.emu_data.oilTemperature);
+  printThreeDigitInt(emu.emu_data.oilTemperature);
+
   lcd.print(" ");
+
   lcd.print("FP:");
   lcd.print(emu.emu_data.fuelPressure);
+}
+
+void printThreeDigitInt(int value) {
+  sprintf(intStringBuff, "%3d", value);
+  lcd.print(intStringBuff);
 }
