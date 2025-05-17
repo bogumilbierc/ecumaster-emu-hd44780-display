@@ -64,3 +64,10 @@ Connects to EMU serial output on the expansion port.
 You won't be able to flash a fully assembled board due to the way in which TX and RX pins are wired on Arduino.
 
 Before flashing board You need to disconnect TX and RX pins from the board.
+
+## Case ##
+
+### Required hardware ###
+
+- 4 M4x50 bolts
+- 4 M4 nuts
