@@ -3,6 +3,8 @@
 Simple "dash" for EMU Classic based on Arduino and HD44780 screen.
 Connects to EMU serial output on the expansion port.
 
+It is a super inexpensive design, parts in total (without case) should cost less than 50PLN (12 USD).
+
 ## Preview ##
 
 Assembled dash
