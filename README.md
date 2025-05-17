@@ -3,6 +3,14 @@
 Simple "dash" for EMU Classic based on Arduino and HD44780 screen.
 Connects to EMU serial output on the expansion port.
 
+## Preview ##
+
+Assembled dash
+![assembled dash](./docs/pictures/offline.jpeg)
+
+Dash in a car
+![dash in car](./docs/pictures/online.jpeg)
+
 ## Elements ##
 
 - Arduino Nano
@@ -63,9 +71,17 @@ Connects to EMU serial output on the expansion port.
 
 You won't be able to flash a fully assembled board due to the way in which TX and RX pins are wired on Arduino.
 
-Before flashing board You need to disconnect TX and RX pins from the board.
+Before flashing the board, You need to disconnect TX and RX pins from the board.
 
 ## Case ##
+
+Case is a FreeCad project that can be 3D printed. 
+
+It is designed to fit around a 40 mm roll-cage tube, but this can be easily modified in FreeCad.
+
+### Preview ###
+
+![case preview](./docs/pictures/case.png)
 
 ### Required hardware ###
 
