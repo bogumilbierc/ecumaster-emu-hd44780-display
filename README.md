@@ -30,12 +30,28 @@ Dash in a car
 - GX16 5-pin connector
 
   ![gx16 5-pin](./docs/elements/gx16_5pin.png)
+  
+## Dash software versions / projects ##
 
-## Arduino IDE setup ##
+### dash ###
 
+This versions uses EMU Serial protocol using off the shelf EMUSerial library.
+
+#### Arduino IDE setup #### 
 - Install LiquidCrystal_I2C library
 - Install EMUSerial library (Note: On Linux You need to modify `~/Arduino/libraries/EMUSerial/src/EMUSerial.h` file and
   replace `#include "arduino.h"` with `#include "Arduino.h"`)
+
+### dash-edl ###
+
+This version uses EMU Serial in EDL-1 mode.
+
+Kudos to https://github.com/ThiloZ/EDLSerial/tree/main for providing library
+
+#### Arduino IDE setup #### 
+- Install LiquidCrystal_I2C library
+- EDLSerial comes pre-bundled with source code (as it needs to be modified as per use-case)
+
 
 ## Hardware connections ##
 
